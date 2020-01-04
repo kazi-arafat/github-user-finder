@@ -80,7 +80,13 @@ class UI {
         });
 
         document.getElementById('repos').innerHTML = output;
-
+	}
+    //clear Alert Messages
+    clearAlert(){
+        const currentAlert = document.querySelector('.alert');
+        if(currentAlert){
+            currentAlert.remove();
+        }
     }
 
 	// clear Profile
